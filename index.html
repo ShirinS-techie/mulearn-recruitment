@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>µLearn CET Tech Team Recruitment</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Segoe UI", sans-serif;
+      scroll-behavior: smooth;
+      background: #f9fafb;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4f46e5, #3b82f6);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin: 0;
+    }
+
+    /* Card Section */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+      max-width: 1000px;
+      margin: 50px auto;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      transition: transform 0.25s, box-shadow 0.25s;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      color: #4f46e5;
+    }
+
+    /* Sections */
+    section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      color: #4f46e5;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery img {
+      width: 90%;
+      height: 320px;
+      /*object-fit: cover;*/
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    figcaption{
+        margin-top: 8px;
+        font-size: 0.9rem;
+        color: #555;
+    }
+
+    footer {
+      background: #111827;
+      color: #d1d5db;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .cta{
+        margin-top: 40px;
+        margin-left:600px;
+    }
+
+    .cta button {
+        background: #4f46e5;
+        color: white;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 8px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    .cta button:hover{
+        background: #3b82f6;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Join µLearn CET Tech Team</h1>
+    <p>Innovation • Collaboration • Learning</p>
+  </header>
+
+  <!-- Interactive Cards -->
+  <div class="cards">
+    <div class="card" onclick="document.getElementById('innovation').scrollIntoView({behavior: 'smooth'})">
+      <h3>🚀 Innovation</h3>
+      <p>Work on exciting projects that push the boundaries of technology.</p>
+    </div>
+
+    <div class="card" onclick="document.getElementById('collaboration').scrollIntoView({behavior: 'smooth'})">
+      <h3>🤝 Collaboration</h3>
+      <p>Be part of a supportive community that grows together.</p>
+    </div>
+
+    <div class="card" onclick="document.getElementById('learning').scrollIntoView({behavior: 'smooth'})">
+      <h3>📚 Learning</h3>
+      <p>Gain hands-on experience and mentorship from tech enthusiasts.</p>
+    </div>
+  </div>
+
+  <div class="cta">
+    <button onclick="alert('Thanks for showing interest! Recruitment form will open soon.')">
+        Apply Now
+    </button>
+  </div>
+
+  <!-- Innovation Section -->
+  <section id="innovation">
+    <h2>🚀 Innovation</h2>
+    <div class="gallery">
+        <figure>
+            <img src="images/innovation1.png" alt="Innovation Image 1">
+            <figcaption>Brainstorming fresh ideas</figcaption>
+        </figure>
+        <figure>
+            <img src="images/innovation2.png" alt="Innovation Image 2">
+            <figcaption>Building innovative solutions</figcaption>
+        </figure>
+    </div>
+  </section>
+
+  <!-- Collaboration Section -->
+  <section id="collaboration">
+    <h2>🤝 Collaboration</h2>
+    <div class="gallery">
+      <figure>
+            <img src="images/collaboration1.png" alt="collaboration Image 1">
+            <figcaption>Colab with genrobotics</figcaption>
+        </figure>
+        <figure>
+            <img src="images/collaboration2.png" alt="collaboration Image 2">
+            <figcaption>Colab with ASAP</figcaption>
+        </figure>
+    </div>
+  </section>
+
+  <!-- Learning Section -->
+  <section id="learning">
+    <h2>📚 Learning</h2>
+    <div class="gallery">
+      <figure>
+            <img src="images/learning1.png" alt="collaboration Image 1">
+            <figcaption>μ𝗺𝗲𝗻𝘁 - Teamwork in action</figcaption>
+        </figure>
+        <figure>
+            <img src="images/learning2.png" alt="collaboration Image 2">
+            <figcaption>Best Emerging Campuses of 2024 award</figcaption>
+        </figure>
+     
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 µLearn CET. All rights reserved.</p>
+  </footer>
+</body>
+</html>
